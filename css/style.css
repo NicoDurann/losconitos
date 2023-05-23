@@ -32,16 +32,22 @@ a{
 
 h1{
     font-family: 'Parisienne', cursive;
-    font-size: 5vw;
+    font-size: 80px;
     color: #717ec2;
+    transition: color 0.2s ease-out, color 0.2s ease-out;
+
 } 
+
+h1:hover{
+    color: #5a5da5;
+}
 
 .navbar {
     background-color: #fefefe;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 9vh;
+    height: 70px;
     padding: 20px;
     background-color: #e3eafa;
 }
@@ -57,16 +63,27 @@ h1{
     margin-left: 20px;
 }
 
+.menu li a.contactooooo{
+    background-color: #717ec2;
+    color: #fefefe;
+}
+
+.menu li a.contactooooo:hover{
+    background-color: #5a5da5;
+    color: #fefefe;
+}
+
 .menu li a {
     font-family: 'Josefin Slab', serif;
     color: #717ec2;
     text-decoration: none;
-    font-size: 1.5vw;
+    font-size: 28px;
     font-weight: bold;
-    padding: 10px;
+    padding: 15px;
     border-radius: 20px;
     transition: background-color 0.2s ease-out, color 0.2s ease-out;
 }
+
 
 .menu li:hover a {
     background-color: #717ec2;
@@ -79,6 +96,30 @@ h1{
 
 #banner {
     background-image: url("../img/banner.jpg");
+    background-repeat: no-repeat;
+    background-size: 100vw;
+    height: 100vh;
+}
+#banner-contacto {
+    background-image: url("../img/banner-contacto.jpg");
+    background-repeat: no-repeat;
+    background-size: 100vw;
+    height: 100vh;
+}
+#banner-galeria {
+    background-image: url("../img/banner-galeria.jpg");
+    background-repeat: no-repeat;
+    background-size: 100vw;
+    height: 100vh;
+}
+#banner-servicios {
+    background-image: url("../img/banner-servicios.jpg");
+    background-repeat: no-repeat;
+    background-size: 100vw;
+    height: 100vh;
+}
+#banner-nosotros {
+    background-image: url("../img/banner-nosotros.jpg");
     background-repeat: no-repeat;
     background-size: 100vw;
     height: 100vh;
@@ -101,7 +142,7 @@ h1{
 
 h2{
     font-family: 'Dancing Script', cursive;
-    font-size: 5vw;
+    font-size: 100px;
     color: #717ec2;
     text-align: center;
     padding-bottom: 20px;
@@ -125,13 +166,13 @@ h2{
 
 .div2 h3{
     padding: 20px;
-    font-size: 4vw;
+    font-size: 70px;
     font-weight: bold;
 }
 
 .div2 p{
     padding: 20px;
-    font-size: 1.5vw;
+    font-size: 28px;
 }
 
 .boton {
@@ -140,7 +181,7 @@ h2{
     color: white;
     padding: 15px 25px;
     border-radius: 15px;
-    font-size: 2.5vh;
+    font-size: 25px;
     text-decoration: none;
     transition: background-color 0.3s ease;
 }
@@ -149,6 +190,23 @@ h2{
     background-color: #5a5da5;
 }
 
+.sn-p{
+    padding: 20px 10%;
+    font-size: 28px;
+    text-align: center;
+}
+
+video{
+    width: 100%;
+    
+}
+
+.fotofam{
+    width: 100%;
+}
+.sn-h2{
+    padding-top: 20px;
+}
 /* Fin Nosotros */
 
 /* Servicios */
@@ -160,7 +218,7 @@ h2{
 
 .servicios p{
     padding: 20px;
-    font-size: 1.5vw;
+    font-size: 28px;
     text-align: center;
 }
 
@@ -172,9 +230,29 @@ h2{
     padding-top: 20px;
     background-color: #e3eafa;
 }
+.servicioss{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+    padding-top: 20px;
+    background-color: #e3eafa;
+}
 
 .servicios a{
     margin-top: 30px;
+}
+
+.servicio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.servicio img {
+    max-width: 80%;
+    padding-bottom: 20px;
 }
 /* Fin Servicios */
 
@@ -236,43 +314,87 @@ h2{
 }
 
 .cajitas {
-    width: 375px;
-    height: 550px;
+    width: 500px;
+    height: 560px;
     margin: 20px;
-    border-radius: 20px;
     overflow: hidden;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    /* border-radius: 20px; */
+    /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s ease;
-    background-color: #e3eafa;
+    background-color: #e3eafa; */
 }
 
-.cajitas:hover {
+/* .cajitas:hover {
     transform: translateY(-10px);
-}
+} */
 
 .cajitas img {
     width: 100%;
-    height: 50%;
+    /* height: 50%; */
     object-fit: cover;
 }
 
 .cajita-texto {
-    padding: 20px;
+    /* padding: 20px; */
     text-align: center;
 }
 
 .cajita-texto h3 {
     font-family: 'Dancing Script', cursive;
-    font-size: 40px;
+    font-size: 50px;
     font-weight: bold;
     font-weight: 600;
     margin-bottom: 10px;
 }
 
 .cajita-texto p {
-  font-size: 23px;
-  color: #040404;
+    font-size: 25px;
+    color: #040404;
 }
+
+.nav-productos {
+    background-color: #e3eafa;
+    padding: 20px 0;
+}
+
+.nav-productos ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-productos ul li{
+    margin-right: 20px;
+}
+
+.nav-productos li a {
+    font-family: 'Josefin Slab', serif;
+    color: #717ec2;
+    text-decoration: none;
+    font-size: 28px;
+    font-weight: bold;
+    padding: 15px;
+    border-radius: 20px;
+    transition: background-color 0.2s ease-out, color 0.2s ease-out;
+}
+
+
+.nav-productos li:hover a{
+    background-color: #717ec2;
+    color: #e3eafa;
+}
+
+
+h3{
+    font-family: 'Dancing Script', cursive;
+    font-size: 80px;
+    color: #717ec2;
+    text-align: center;
+    padding: 20px;
+}
+
 
 /* Fin Galeria */
 
@@ -284,7 +406,7 @@ h2{
 
 .equipo-text p{
     padding: 20px;
-    font-size: 1.5vw;
+    font-size: 28px;
     text-align: center;
 }
 
@@ -297,14 +419,115 @@ h2{
 .equipo img {
     width: 30vw;
     margin: 10px;
+    border-radius: 70px;
     transition: transform 0.2s ease-in-out;
-
 }
 .equipo img:hover {
     transform: translateY(-10px);
 }
 
 /* Fin Equipo */
+
+/* Contacto */
+
+.contact-with-us{
+    margin: 50px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-evenly;
+}
+
+.contact-with-us img{
+    width: 70px;
+}
+
+.contact-p{
+    padding: 10px;
+    font-size: 28px;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 60%;
+    margin: 0 auto;
+    font-size: 30px;
+    padding: 25px;
+}
+
+input,
+textarea {
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #e3eafa;
+    resize: none;
+    border: none;
+    height: 50px;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #717ec2 ; 
+}
+
+
+textarea {
+    height: 250px;
+}
+
+form button {
+    margin-top: 20px;
+}
+
+button[type="submit"] {
+    background-color: #717ec2;
+    color: white;
+    padding: 15px 25px;
+    border-radius: 15px;
+    font-size: 25px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    border: none;
+    cursor: pointer;
+    align-self: center;
+    width: 200px;
+}
+
+button[type="submit"]:hover {
+    background-color: #5a5da5;
+}
+
+.conecta{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.conecta-h2{
+    margin-top: 30px;
+}
+
+.conecta img{ 
+    width: 70px;
+    margin: 20px;
+}
+
+.mapa{
+    display: flex;
+    justify-content: center;
+}
+
+.mapa iframe{
+    width: 100%;
+    height: 600px; 
+}
+
+/* Fin Contacto */
+
 
 /* Footer */
 footer {
@@ -324,7 +547,7 @@ footer {
     
 .contact-info h2{
     margin-bottom: 20px;
-    font-size: 5vw;
+    font-size: 110px;
     font-weight: 800;
     color: #040404;
 
@@ -332,7 +555,7 @@ footer {
     
 .contact-info p{
     margin-bottom: 10px;
-    font-size: 20px;
+    font-size: 27px;
     font-weight: 800;
     text-align: center;
 }
@@ -344,7 +567,7 @@ footer {
     
 .creditos p {
     font-weight: bold;
-    font-size: 1vw;
+    font-size: 25px;
 }
 
 /* Fin Footer */
@@ -377,3 +600,5 @@ footer {
 }
 
 /* Fin Boton de ir hacia arriba */
+
+
